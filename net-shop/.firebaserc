@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "net-shop-511f9": {
+      "hosting": {
+        "net-shop": [
+          "net-shop-511f9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "net-shop-511f9"
+  }
+}
