@@ -78,7 +78,7 @@ export class ProductPageComponent implements OnInit {
     this.fbService.add("products",{
       id: "",
       name: this.emptyProduct[0].validator.get("name").value,
-      description: this.emptyProduct[0].validator.get("description").value,
+      description: this.emptyProduct[0].validator.get("description").value == null ? "" : this.emptyProduct[0].validator.get("description").value,
       code: this.emptyProduct[0].validator.get("code").value.toUpperCase(),
       size: this.emptyProduct[0].validator.get("size").value.toLowerCase(),
       color: this.emptyProduct[0].validator.get("color").value.toLowerCase(),

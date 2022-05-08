@@ -45,7 +45,8 @@ export class ProductDialogComponent implements OnInit {
     this.delete = "delete"
     this.product = this.data.product;
     this.valueChange();
-    this.auth.currentUser().then(email => {this.userEmail = email});
+    this.auth.currentUser().then(email => {this.userEmail = email
+    console.log(email)});
   }
 
   resetDialog(){
